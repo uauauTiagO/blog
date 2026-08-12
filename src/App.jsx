@@ -181,11 +181,11 @@ export default function App() {
               <div className="available-skills-list">
                 <div className="avail-skill">
                   <div className="skill-icon-sm web-icon"><Code size={20} /></div>
-                  <p><strong>Desenvolvimento Web:</strong> HTML, CSS, PHP e JS.</p>
+                  <p><strong>Desenvolvimento Web:</strong> HTML, CSS, PHP e conceitos básicos de JavaScript.</p>
                 </div>
                 <div className="avail-skill">
                   <div className="skill-icon-sm design-icon"><Palette size={20} /></div>
-                  <p><strong>Design Digital:</strong> Adobe Illustrator e Figma.</p>
+                  <p><strong>Design Digital:</strong> Adobe Illustrator, Figma, Canva, SquidFlex, Affinity Designer.</p>
                 </div>
                 <div className="avail-skill">
                   <div className="skill-icon-sm db-icon"><Database size={20} /></div>
