@@ -128,7 +128,7 @@ input {
 .hero-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 1.5rem;
 }
 
