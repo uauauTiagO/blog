@@ -98,6 +98,21 @@ export default function App() {
             <p className="hero-text">
               Jovem dinâmico e proativo, com grande vontade de aprender e trabalhar em equipa. Através da minha experiência no McDonald's e estágios na Xplor Solutions e na Modular Digital Agency, desenvolvi uma forte capacidade na resolução de problemas sob pressão e agilidade na aprendizagem de novos sistemas, habituado a ambientes dinâmicos e focado em contribuir para a eficiência operacional da equipa através do rigor técnico e da boa comunicação.
             </p>
+            <div className="hero-stats">
+              <div className="stat-card">
+                <span className="stat-val">2</span>
+                <span className="stat-lbl">Estágios Realizados</span>
+              </div>
+              <div className="stat-card">
+                <span className="stat-val">10+</span>
+                <span className="stat-lbl">Projetos Criados</span>
+              </div>
+              <div className="stat-card">
+                <span className="stat-val">100%</span>
+                <span className="stat-lbl">Foco em Soluções</span>
+              </div>
+            </div>
+
             <div className="hero-actions">
               <a className="button button-white" href="#experiencia">Ver experiências</a>
               <a className="button button-outline" href="/Curriculo_Tiago_Duarte.pdf" download>
