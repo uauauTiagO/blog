@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, GraduationCap, BookOpen, Code, Palette, ArrowUpRight, Database, Settings, Phone, Mail, MapPin } from 'lucide-react';
+import { Download, GraduationCap, BookOpen, Code, Palette, ArrowUpRight, Database, Settings, Phone, Mail, MapPin, ShieldCheck, Zap, Users, Brain } from 'lucide-react';
 
 const LinkedinIcon = ({ size = 24, color = "currentColor" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 448 512" fill={color}>
@@ -109,11 +109,34 @@ export default function App() {
           <div className="bento-col-right">
             <div className="bento-item perfil-card">
               <span className="card-label">COMPETÊNCIAS PESSOAIS</span>
-              <div className="skill-row">
-                <div className="skill-icon tech-icon-box"><Settings size={32} /></div>
-                <div className="skill-text">
-                  <strong>Responsável e Pontual</strong>
-                  <p>Facilidade nas aprendizagens e rápida adaptação a novos espaços de trabalho.</p>
+              <div className="personal-skills-grid">
+                <div className="personal-skill-item">
+                  <span className="ps-icon"><ShieldCheck size={20} /></span>
+                  <div>
+                    <strong>Responsabilidade e Pontualidade</strong>
+                    <p>Compromisso com prazos, horários e rigor profissional.</p>
+                  </div>
+                </div>
+                <div className="personal-skill-item">
+                  <span className="ps-icon"><Zap size={20} /></span>
+                  <div>
+                    <strong>Adaptação Rápida</strong>
+                    <p>Facilidade na aprendizagem de novos sistemas e metodologias.</p>
+                  </div>
+                </div>
+                <div className="personal-skill-item">
+                  <span className="ps-icon"><Users size={20} /></span>
+                  <div>
+                    <strong>Trabalho em Equipa</strong>
+                    <p>Colaboração ativa, focada no suporte mútuo e objetivos comuns.</p>
+                  </div>
+                </div>
+                <div className="personal-skill-item">
+                  <span className="ps-icon"><Brain size={20} /></span>
+                  <div>
+                    <strong>Resolução de Problemas</strong>
+                    <p>Capacidade de atuar e resolver desafios sob pressão.</p>
+                  </div>
                 </div>
               </div>
             </div>
