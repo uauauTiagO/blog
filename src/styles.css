@@ -54,8 +54,8 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 0;
-  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -129,7 +129,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3rem;
+  padding: 2rem 2.5rem;
 }
 
 .eyebrow,
@@ -139,24 +139,25 @@ input {
   letter-spacing: 0.1em;
   color: var(--text-muted);
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   display: block;
 }
 
 .hero-card h1 {
-  font-size: clamp(2.5rem, 5vw, 4.2rem);
-  line-height: 1.1;
+  font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+  line-height: 1.15;
   font-weight: 700;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.2rem 0;
   letter-spacing: -0.03em;
-  max-width: 14ch;
+  max-width: 22ch;
 }
 
 .hero-text {
+  font-size: 1.05rem;
   color: var(--text-muted);
-  line-height: 1.6;
-  max-width: 80%;
-  margin: 0 0 2.5rem 0;
+  line-height: 1.7;
+  max-width: 90%;
+  margin: 0 0 2.2rem 0;
 }
 
 .hero-actions {
