@@ -98,6 +98,21 @@ export default function App() {
             <p className="hero-text">
               Jovem dinâmico e proativo, com grande vontade de aprender e trabalhar em equipa. Através da minha experiência no McDonald's e estágios na Xplor Solutions e na Modular Digital Agency, desenvolvi uma forte capacidade na resolução de problemas sob pressão e agilidade na aprendizagem de novos sistemas, habituado a ambientes dinâmicos e focado em contribuir para a eficiência operacional da equipa através do rigor técnico e da boa comunicação.
             </p>
+
+            <div className="hero-tech-section">
+              <span className="tech-title">TECNOLOGIAS & FERRAMENTAS</span>
+              <div className="tech-tags">
+                <span className="tech-tag">React</span>
+                <span className="tech-tag">JavaScript</span>
+                <span className="tech-tag">PHP</span>
+                <span className="tech-tag">MySQL</span>
+                <span className="tech-tag">HTML5 & CSS3</span>
+                <span className="tech-tag">Figma</span>
+                <span className="tech-tag">Illustrator</span>
+                <span className="tech-tag">Git</span>
+              </div>
+            </div>
+
             <div className="hero-stats">
               <div className="stat-card">
                 <span className="stat-val">2</span>
