@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, GraduationCap, BookOpen, Code, Palette, ArrowUpRight, Database, Settings, Phone, Mail, MapPin, ShieldCheck, Zap, Users, Brain } from 'lucide-react';
+import { Download, GraduationCap, BookOpen, Code, Palette, ArrowUpRight, Database, Settings, Phone, Mail, MapPin, ShieldCheck, Zap, Users, Brain, Boxes } from 'lucide-react';
 
 const LinkedinIcon = ({ size = 24, color = "currentColor" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 448 512" fill={color}>
@@ -23,53 +23,53 @@ const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`;
 
 const featuredProjects = [
   {
-    title: 'E-commerce Xplor Solutions',
+    title: 'E-commerce Dashboard',
     subtitle: 'PHP / MySQL',
     tags: ['PHP/MySQL'],
-    image: 'https://placehold.co/600x400/222/fff?text=E-commerce+UI'
+    image: publicAsset('ecommerce-dashboard.svg?v=2')
   },
   {
-    title: 'App UX Design',
-    subtitle: 'Exemplo',
+    title: 'Mobile Store App',
+    subtitle: 'Illustrator UI Mockup',
     tags: ['Illustrator'],
-    image: 'https://placehold.co/400x600/222/fff?text=App+Mockup'
+    image: publicAsset('mobile-store-mockup.svg?v=5')
   },
   {
-    title: 'Data Visualization',
-    subtitle: 'Infographic',
-    tags: ['MySQL'],
-    image: 'https://placehold.co/600x400/222/fff?text=Data+Viz'
+    title: '3D Spaceship Module',
+    subtitle: 'Blender 3D Modeling',
+    tags: ['Blender'],
+    image: publicAsset('nave-espacial-blender.png')
   }
 ];
 
 const experiences = [
   {
     company: "McDonald's - Torres Vedras",
-    role: 'Funcionário. Resolução de Problemas sob Pressão: Capacidade de resposta imediata a situações críticas e reclamações, mantendo o foco na qualidade do serviço e no cumprimento de protocolos rigorosos. Trabalho em Equipa e Coordenação: Colaboração direta com a equipa para otimizar os tempos de entrega.',
-    date: 'Set 2025 - Atual',
+    role: 'Crew Member. Customer service and problem-solving under pressure. Prompt response to critical situations and complaints, maintaining high service quality and strict protocol compliance. Teamwork and coordination: working directly with the team to optimize delivery times.',
+    date: 'Sep 2025 - Present',
     logo: 'M',
-    type: 'Equipa'
+    type: 'Team / Operations'
   },
   {
-    company: 'Modular Digital Agency',
-    role: 'Estagiário. Desenvolvimento de sites em WordPress com Squid Flex, criação de templates para redes sociais e apoio na gestão de conteúdos e tarefas digitais.',
-    date: 'Abr 2026 - Jul 2026',
+    company: 'Modular Studio',
+    role: 'Intern. Created websites and templates in WordPress with SquidFlex, designed templates for social media, and tested sites to identify and resolve bugs.',
+    date: 'Apr 2026 - Jul 2026',
     logo: 'MODULAR',
-    type: 'WordPress / Gestão'
+    type: 'WordPress / Web Dev'
   },
   {
     company: 'Xplor Solutions',
-    role: 'Estagiário. Contribuí ativamente para a organização e otimização do armazém. Participei na montagem e configuração de equipamentos eletrónicos, bem como no diagnóstico e resolução de falhas técnicas em computadores corporativos.',
+    role: 'Intern. Contributed actively to warehouse inventory organization and optimization. Assembled and configured electronic equipment, and diagnosed and resolved technical faults on corporate computers.',
     date: 'Jan 2023 - Mar 2023',
     logo: 'X',
-    type: 'Hardware / Suporte'
+    type: 'Hardware / Support'
   },
   {
     company: 'Xplor Solutions',
-    role: 'Estagiário. Desenvolvimento e implementação de um website funcional, personalizado para as necessidades da empresa, visando otimizar processos internos e facilitar o acesso às informações.',
-    date: 'Set 2022 - Nov 2022',
+    role: 'Intern. Developed and implemented a functional, custom website tailored to company requirements to optimize internal processes and streamline access to information.',
+    date: 'Sep 2022 - Nov 2022',
     logo: 'X',
-    type: 'Website'
+    type: 'Web Development'
   }
 ];
 
@@ -83,9 +83,9 @@ export default function App() {
       <header className="topbar">
         <a className="brand" href="/">TIAGO DUARTE</a>
         <nav className="nav">
-          <a href="#experiencia">Experiência</a>
-          <a href="#competencias">Competências</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
@@ -93,108 +93,136 @@ export default function App() {
         {/* HERO BENTO GRID */}
         <section className="bento-grid-hero">
           <div className="bento-item hero-card">
-            <span className="eyebrow">ENGENHEIRO MULTIMÉDIA</span>
-            <h1>Engenheiro Multimédia com energia para aprender, resolver e construir.</h1>
+            <span className="eyebrow">MULTIMEDIA ENGINEER</span>
+            <h1>Multimedia Engineer with the drive to learn, solve, and build.</h1>
             <p className="hero-text">
-              Jovem dinâmico e proativo, com grande vontade de aprender e trabalhar em equipa. Através da minha experiência no McDonald's e estágios na Xplor Solutions e na Modular Digital Agency, desenvolvi uma forte capacidade na resolução de problemas sob pressão e agilidade na aprendizagem de novos sistemas, habituado a ambientes dinâmicos e focado em contribuir para a eficiência operacional da equipa através do rigor técnico e da boa comunicação.
+              Dynamic and proactive Multimedia Engineering graduate with experience in web development, digital design, website testing, and customer service. Developed strong problem-solving, teamwork, and communication skills through roles at McDonald's and internships at Modular Studio and Xplor Solutions. Quick to learn new systems, comfortable in fast-paced environments, and committed to producing accurate, effective work.
             </p>
 
             <div className="hero-tech-section">
-              <span className="tech-title">TECNOLOGIAS & FERRAMENTAS</span>
+              <span className="tech-title">TECHNOLOGIES &amp; TOOLS</span>
               <div className="tech-tags">
                 <span className="tech-tag">React</span>
                 <span className="tech-tag">JavaScript</span>
                 <span className="tech-tag">PHP</span>
                 <span className="tech-tag">MySQL</span>
-                <span className="tech-tag">HTML5 & CSS3</span>
+                <span className="tech-tag">HTML5 &amp; CSS3</span>
+                <span className="tech-tag">Blender</span>
                 <span className="tech-tag">Figma</span>
                 <span className="tech-tag">Illustrator</span>
                 <span className="tech-tag">Git</span>
               </div>
             </div>
 
+            <div className="hero-disciplines">
+              <div className="discipline-card">
+                <span className="discipline-icon"><Code size={18} /></span>
+                <div>
+                  <strong>Web Engineering</strong>
+                  <p>Building responsive platforms with React, PHP, MySQL, and modern standards.</p>
+                </div>
+              </div>
+              <div className="discipline-card">
+                <span className="discipline-icon"><Palette size={18} /></span>
+                <div>
+                  <strong>UI/UX &amp; Design</strong>
+                  <p>Crafting intuitive interfaces, vector systems, and prototypes in Figma &amp; Illustrator.</p>
+                </div>
+              </div>
+              <div className="discipline-card">
+                <span className="discipline-icon"><Boxes size={18} /></span>
+                <div>
+                  <strong>3D Modeling</strong>
+                  <p>Creating modular environments, isometric scenes, and digital assets in Blender.</p>
+                </div>
+              </div>
+            </div>
+
             <div className="hero-stats">
               <div className="stat-card">
                 <span className="stat-val">2</span>
-                <span className="stat-lbl">Estágios Realizados</span>
+                <span className="stat-lbl">Internships Completed</span>
               </div>
               <div className="stat-card">
                 <span className="stat-val">10+</span>
-                <span className="stat-lbl">Projetos Criados</span>
+                <span className="stat-lbl">Projects Built</span>
               </div>
               <div className="stat-card">
                 <span className="stat-val">100%</span>
-                <span className="stat-lbl">Foco em Soluções</span>
+                <span className="stat-lbl">Solution-Focused</span>
               </div>
             </div>
 
             <div className="hero-actions">
-              <a className="button button-white" href="#experiencia">Ver experiências</a>
-              <a className="button button-outline" href="/Curriculo_Tiago_Duarte.pdf" download>
-                <Download size={18} /> Download CV (PDF)
+              <a className="button button-white" href="#experience">View Experience</a>
+              <a className="button button-outline" href={publicAsset('Curriculo_Tiago_Duarte.pdf')} download>
+                <Download size={18} /> Download CV (Portuguese)
+              </a>
+              <a className="button button-outline" href={publicAsset('Curriculo_Tiago_Duarte_EN.pdf')} download>
+                <Download size={18} /> Download CV (English)
               </a>
             </div>
           </div>
 
           <div className="bento-col-right">
             <div className="bento-item perfil-card">
-              <span className="card-label">COMPETÊNCIAS PESSOAIS</span>
+              <span className="card-label">PERSONAL SKILLS</span>
               <div className="personal-skills-grid">
                 <div className="personal-skill-item">
                   <span className="ps-icon"><ShieldCheck size={20} /></span>
                   <div>
-                    <strong>Responsabilidade e Pontualidade</strong>
-                    <p>Compromisso com prazos, horários e rigor profissional.</p>
+                    <strong>Responsible &amp; Punctual</strong>
+                    <p>Dedication to deadlines, schedules, and professional standards.</p>
                   </div>
                 </div>
                 <div className="personal-skill-item">
                   <span className="ps-icon"><Zap size={20} /></span>
                   <div>
-                    <strong>Adaptação Rápida</strong>
-                    <p>Facilidade na aprendizagem de novos sistemas e metodologias.</p>
+                    <strong>Fast Learner &amp; Adaptable</strong>
+                    <p>Quick to assimilate new systems, workflows, and methodologies.</p>
                   </div>
                 </div>
                 <div className="personal-skill-item">
                   <span className="ps-icon"><Users size={20} /></span>
                   <div>
-                    <strong>Trabalho em Equipa</strong>
-                    <p>Colaboração ativa, focada no suporte mútuo e objetivos comuns.</p>
+                    <strong>Teamwork</strong>
+                    <p>Active collaboration focused on mutual support and shared goals.</p>
                   </div>
                 </div>
                 <div className="personal-skill-item">
                   <span className="ps-icon"><Brain size={20} /></span>
                   <div>
-                    <strong>Resolução de Problemas</strong>
-                    <p>Capacidade de atuar e resolver desafios sob pressão.</p>
+                    <strong>Problem Solving</strong>
+                    <p>Ability to troubleshoot, prioritize, and resolve challenges under pressure.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="bento-item available-card">
-              <h2>Disponível para crescer e colaborar.</h2>
+              <h2>Available to collaborate and build.</h2>
 
               <p className="available-bio-text">
-                Procuro integrar equipas dinâmicas onde possa aplicar as minhas competências e absorver novas tecnologias, contribuindo para projetos desafiadores com foco na inovação.
+                Based in Portugal | Available for on-site, hybrid, and remote roles across Europe. Seeking dynamic teams where I can apply my skills, embrace new technologies, and contribute to innovative, high-impact projects.
               </p>
 
               <div className="available-skills-list">
                 <div className="avail-skill">
                   <div className="skill-icon-sm web-icon"><Code size={20} /></div>
-                  <p><strong>Desenvolvimento Web:</strong> HTML, CSS, PHP e conceitos básicos de JavaScript.</p>
+                  <p><strong>Web Development:</strong> HTML, CSS, PHP, and JavaScript fundamentals.</p>
                 </div>
                 <div className="avail-skill">
                   <div className="skill-icon-sm design-icon"><Palette size={20} /></div>
-                  <p><strong>Design Digital:</strong> Adobe Illustrator, Figma, Canva, SquidFlex, Affinity Designer.</p>
+                  <p><strong>Digital Design &amp; 3D:</strong> Blender, Adobe Illustrator, Figma, Canva, SquidFlex, Affinity Designer.</p>
                 </div>
                 <div className="avail-skill">
                   <div className="skill-icon-sm db-icon"><Database size={20} /></div>
-                  <p><strong>Bases de Dados:</strong> MySQL.</p>
+                  <p><strong>Databases:</strong> MySQL.</p>
                 </div>
               </div>
 
               <div className="learning-section">
-                <span className="learning-label">ATUALMENTE A APRENDER:</span>
+                <span className="learning-label">CURRENTLY LEARNING:</span>
                 <div className="learning-badges">
                   <span className="learning-badge">Docker</span>
                   <span className="learning-badge">WordPress</span>
@@ -204,9 +232,9 @@ export default function App() {
           </div>
         </section>
 
-        {/* PROJETOS */}
-        <section className="section" id="projetos">
-          <h2 className="section-title">Projetos em Destaque</h2>
+        {/* PROJECTS */}
+        <section className="section" id="projects">
+          <h2 className="section-title">Featured Projects</h2>
           <div className="projects-grid">
             {featuredProjects.map((proj, idx) => (
               <div className="bento-item project-card" key={idx}>
@@ -226,10 +254,10 @@ export default function App() {
         </section>
 
         <div className="bottom-layout">
-          {/* LEFT COL: EXPERIENCIA */}
+          {/* LEFT COL: EXPERIENCE */}
           <div className="bottom-left">
-            <section className="section" id="experiencia">
-              <h2 className="section-title">Experiência</h2>
+            <section className="section" id="experience">
+              <h2 className="section-title">Work Experience</h2>
               <div className="exp-grid">
                 {experiences.map((exp, idx) => (
                   <div className="bento-item exp-card" key={idx}>
@@ -238,7 +266,7 @@ export default function App() {
                         {exp.logo === 'M' ? (
                           <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg" alt="McDonald's" style={{ width: '40px', height: '40px', objectFit: 'contain' }} />
                         ) : exp.logo === 'MODULAR' ? (
-                          <img src={publicAsset('modular-logo.png')} alt="Modular Digital Agency" className="exp-logo-image modular-logo-image" />
+                          <img src={publicAsset('modular-logo.png')} alt="Modular Studio" className="exp-logo-image modular-logo-image" />
                         ) : exp.logo === 'X' ? (
                           <img src={publicAsset('xplor-logo.png')} alt="Xplor" className="exp-logo-image xplor-logo-image" />
                         ) : (
@@ -262,16 +290,16 @@ export default function App() {
           {/* RIGHT COL: WEB DEV, TIMELINE, CONTACT */}
           <div className="bottom-right">
 
-            <section className="bento-item skills-list-card" id="competencias">
-              <h2 className="skills-card-title">Competências Técnicas</h2>
+            <section className="bento-item skills-list-card" id="skills">
+              <h2 className="skills-card-title">Technical Skills</h2>
 
               <div className="skills-category">
-                <span className="skills-category-label">DESENVOLVIMENTO WEB</span>
+                <span className="skills-category-label">WEB DEVELOPMENT</span>
 
                 <div className="skill-progress-item">
                   <div className="tech-icon-small html-icon">5</div>
                   <div className="skill-progress-content">
-                    <p><strong>HTML</strong> | Estruturação de conteúdo e acessibilidade.</p>
+                    <p><strong>HTML</strong> | Semantic structure and accessibility standards.</p>
                     <div className="progress-bar-container"><div className="progress-bar" style={{ width: '85%', background: '#e34f26' }}></div></div>
                   </div>
                   <span className="progress-percent">85%</span>
@@ -280,7 +308,7 @@ export default function App() {
                 <div className="skill-progress-item">
                   <div className="tech-icon-small css-icon">3</div>
                   <div className="skill-progress-content">
-                    <p><strong>CSS</strong> | Estilização responsiva e layouts com Flexbox/Grid.</p>
+                    <p><strong>CSS</strong> | Responsive styling and modern layouts with Flexbox/Grid.</p>
                     <div className="progress-bar-container"><div className="progress-bar" style={{ width: '80%', background: '#1572b6' }}></div></div>
                   </div>
                   <span className="progress-percent">80%</span>
@@ -289,7 +317,7 @@ export default function App() {
                 <div className="skill-progress-item">
                   <div className="tech-icon-small js-icon">JS</div>
                   <div className="skill-progress-content">
-                    <p><strong>JavaScript</strong> | Lógica de programação e manipulação do DOM. <span className="text-fade">(conceitos básicos)</span></p>
+                    <p><strong>JavaScript</strong> | Programming logic and DOM manipulation. <span className="text-fade">(fundamentals)</span></p>
                     <div className="progress-bar-container"><div className="progress-bar" style={{ width: '55%', background: '#f7df1e' }}></div></div>
                   </div>
                   <span className="progress-percent">55%</span>
@@ -298,7 +326,7 @@ export default function App() {
                 <div className="skill-progress-item">
                   <div className="tech-icon-small php-icon">PHP</div>
                   <div className="skill-progress-content">
-                    <p><strong>PHP</strong> | Desenvolvimento do lado do servidor e interação com bases.</p>
+                    <p><strong>PHP</strong> | Server-side development and database integration.</p>
                     <div className="progress-bar-container"><div className="progress-bar" style={{ width: '75%', background: '#777bb4' }}></div></div>
                   </div>
                   <span className="progress-percent">75%</span>
@@ -306,12 +334,12 @@ export default function App() {
               </div>
 
               <div className="skills-category">
-                <span className="skills-category-label">DESIGN DIGITAL</span>
+                <span className="skills-category-label">DIGITAL DESIGN &amp; 3D</span>
 
                 <div className="skill-progress-item">
                   <div className="tech-icon-small figma-small-icon">Fg</div>
                   <div className="skill-progress-content">
-                    <p><strong>Figma</strong> | Criação de interfaces e protótipos interativos.</p>
+                    <p><strong>Figma</strong> | UI design and interactive prototyping.</p>
                     <div className="progress-bar-container"><div className="progress-bar" style={{ width: '75%', background: '#a259ff' }}></div></div>
                   </div>
                   <span className="progress-percent">75%</span>
@@ -320,20 +348,29 @@ export default function App() {
                 <div className="skill-progress-item">
                   <div className="tech-icon-small ai-small-icon">Ai</div>
                   <div className="skill-progress-content">
-                    <p><strong>Adobe Illustrator</strong> | Design vetorial, logótipos e ilustrações.</p>
+                    <p><strong>Adobe Illustrator</strong> | Vector graphics, logos, and illustrations.</p>
                     <div className="progress-bar-container"><div className="progress-bar" style={{ width: '60%', background: '#ff3333' }}></div></div>
                   </div>
                   <span className="progress-percent">60%</span>
                 </div>
+
+                <div className="skill-progress-item">
+                  <div className="tech-icon-small" style={{ background: '#ea580c', color: '#fff', fontWeight: 'bold', fontSize: '0.75rem' }}>3D</div>
+                  <div className="skill-progress-content">
+                    <p><strong>Blender</strong> | 3D modeling, asset creation, and scene composition.</p>
+                    <div className="progress-bar-container"><div className="progress-bar" style={{ width: '70%', background: '#ea580c' }}></div></div>
+                  </div>
+                  <span className="progress-percent">70%</span>
+                </div>
               </div>
 
               <div className="skills-category" style={{ marginBottom: 0 }}>
-                <span className="skills-category-label">BASES DE DADOS</span>
+                <span className="skills-category-label">DATABASES</span>
 
                 <div className="skill-progress-item">
                   <div className="tech-icon-small mysql-small-icon">SQL</div>
                   <div className="skill-progress-content">
-                    <p><strong>MySQL</strong> | Consultas SQL e gerenciamento de base de dados.</p>
+                    <p><strong>MySQL</strong> | SQL queries, schema design, and database management.</p>
                     <div className="progress-bar-container"><div className="progress-bar" style={{ width: '65%', background: '#00618a' }}></div></div>
                   </div>
                   <span className="progress-percent">65%</span>
@@ -344,11 +381,11 @@ export default function App() {
 
 
 
-            <section className="bento-item timeline-card" id="educacao">
-              <h2 className="skills-card-title">Educação e Línguas</h2>
+            <section className="bento-item timeline-card" id="education">
+              <h2 className="skills-card-title">Education &amp; Languages</h2>
 
               <div className="timeline-item-minimal">
-                <div className="timeline-date-minimal">Out 2023 - Atual</div>
+                <div className="timeline-date-minimal">Oct 2023 - Present</div>
                 <div className="timeline-icon-container">
                   <a href="https://istec.pt/" target="_blank" rel="noreferrer" className="edu-logo-minimal istec-logo" style={{ cursor: 'pointer', textDecoration: 'none' }}>
                     <GraduationCap size={14} color="#fff" />
@@ -358,36 +395,36 @@ export default function App() {
                   </svg>
                 </div>
                 <div className="timeline-content-minimal">
-                  <h3>ISTEC - Lisboa</h3>
-                  <p className="edu-course">Engenharia Multimédia</p>
-                  <p className="edu-desc">Web Dev, Design, Motion Graphics</p>
+                  <h3>ISTEC - Lisbon</h3>
+                  <p className="edu-course">Bachelor's Degree in Multimedia Engineering</p>
+                  <p className="edu-desc">Web Dev, Design, 3D, Motion Graphics</p>
                 </div>
               </div>
 
               <div className="timeline-item-minimal">
-                <div className="timeline-date-minimal">Set 2020 - Jul 2023</div>
+                <div className="timeline-date-minimal">Sep 2020 - Jul 2023</div>
                 <div className="timeline-icon-container">
                   <a href="https://www.sefo.pt/" target="_blank" rel="noreferrer" className="edu-logo-minimal esco-logo" style={{ cursor: 'pointer', textDecoration: 'none' }}>
                     <BookOpen size={14} color="#fff" />
                   </a>
                 </div>
                 <div className="timeline-content-minimal">
-                  <h3>ESCO</h3>
-                  <p className="edu-course">Gestão e Programação de Sistemas Informáticos</p>
-                  <p className="edu-desc">HTML 5, CSS 3, JavaScript, SQL, Redes</p>
+                  <h3>ESCO - Torres Vedras</h3>
+                  <p className="edu-course">Vocational Diploma in Computer Systems Management and Programming</p>
+                  <p className="edu-desc">HTML5, CSS3, JavaScript, SQL, Networking</p>
                 </div>
               </div>
 
               <div className="languages-section-minimal">
-                <h3>Línguas</h3>
+                <h3>Languages</h3>
                 <div className="lang-badges">
                   <div className="lang-badge-group">
-                    <span className="lang-badge">Português</span>
-                    <span className="lang-level-text">Nativo</span>
+                    <span className="lang-badge">Portuguese</span>
+                    <span className="lang-level-text">Native</span>
                   </div>
                   <div className="lang-badge-group">
-                    <span className="lang-badge">Inglês</span>
-                    <span className="lang-level-text">Intermédio (B1)</span>
+                    <span className="lang-badge">English</span>
+                    <span className="lang-level-text">Intermediate (B1)</span>
                   </div>
                 </div>
               </div>
@@ -397,11 +434,11 @@ export default function App() {
         </div>
       </main>
 
-      <footer className="footer-section" id="contacto">
+      <footer className="footer-section" id="contact">
         <div className="footer-content">
           <div className="footer-left">
-            <h2>Vamos trabalhar juntos?</h2>
-            <p>Estou sempre aberto a novos desafios e oportunidades de aprendizagem. Se tens um projeto em mente ou apenas queres dizer olá, entra em contacto!</p>
+            <h2>Let's work together!</h2>
+            <p>I am always open to new challenges, projects, and learning opportunities. If you have a project in mind or just want to connect, feel free to reach out!</p>
             <div className="footer-contact-details">
               <div className="contact-detail-item">
                 <Phone size={18} />
@@ -409,19 +446,19 @@ export default function App() {
               </div>
               <div className="contact-detail-item">
                 <Mail size={18} />
-                <span>tiagoclaudinoduarte2005@gmail.com</span>
+                <span>t.claudino.duarte@gmail.com</span>
               </div>
               <div className="contact-detail-item">
                 <MapPin size={18} />
-                <span>Rua Principal, 36, 2550-072, Pereiro</span>
+                <span>Pereiro, Portugal</span>
               </div>
             </div>
           </div>
           <div className="footer-right">
             <form className="footer-contact-form" onSubmit={handleSubmit}>
               <div className="input-group">
-                <input type="email" placeholder="O teu email" required />
-                <button type="submit">Contactar</button>
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit">Get in Touch</button>
               </div>
             </form>
             <div className="social-links footer-socials">
