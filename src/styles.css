@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -32,6 +33,7 @@ body {
   background: var(--bg);
   color: var(--text-main);
   padding: 2rem;
+  overflow-x: hidden;
 }
 
 a {
@@ -1009,35 +1011,419 @@ a.edu-logo-minimal:hover {
 
   .bottom-layout {
     grid-template-columns: 1fr;
+    gap: 3rem;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-disciplines {
-    grid-template-columns: 1fr;
+  body {
+    padding: 0.85rem;
   }
 
-  .footer-content {
+  .topbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .brand {
+    font-size: 1.15rem;
+    letter-spacing: 0.04em;
+  }
+
+  .nav {
+    display: flex;
+    gap: 0.4rem;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav a {
+    font-size: 0.82rem;
+    padding: 0.45rem 0.85rem;
+  }
+
+  .bento-item {
+    border-radius: 18px;
+    padding: 1.25rem 1rem;
+  }
+
+  .bento-grid-hero {
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-card {
+    padding: 1.35rem 1rem;
+  }
+
+  .hero-card h1 {
+    font-size: clamp(1.75rem, 6.8vw, 2.3rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-text {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-tech-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .tech-tags {
+    gap: 0.4rem;
+  }
+
+  .tech-tag {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .hero-disciplines {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 0.75rem;
+    margin: 1.25rem 0;
+  }
+
+  .discipline-card {
+    padding: 0.9rem;
+    gap: 0.75rem;
+  }
+
+  .discipline-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .stat-card {
+    padding: 0.85rem 0.4rem;
+    border-radius: 12px;
+  }
+
+  .stat-val {
+    font-size: 1.35rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .stat-lbl {
+    font-size: 0.68rem;
+    line-height: 1.2;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 0.88rem;
+  }
+
+  .perfil-card {
+    gap: 1rem;
+  }
+
+  .personal-skill-item {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .ps-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .available-card h2 {
+    font-size: 1.45rem;
+    line-height: 1.25;
+  }
+
+  .available-bio-text {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .avail-skill {
+    gap: 0.75rem;
+  }
+
+  .avail-skill p {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  .skill-icon-sm {
+    min-width: 34px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .section {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.35rem;
+    margin-bottom: 1.2rem;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .project-card {
+    padding: 0.85rem;
+  }
+
+  .bottom-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .exp-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
-  .input-group {
+  .exp-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .exp-header {
+    margin-bottom: 1rem;
+  }
+
+  .exp-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .exp-card p {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    margin-bottom: 1.25rem;
+  }
+
+  .exp-footer {
+    flex-direction: column;
+    gap: 0.35rem;
+    font-size: 0.78rem;
+  }
+
+  .skills-card-title {
+    font-size: 1.35rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .skills-category {
+    gap: 0.85rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .skill-progress-item {
+    gap: 0.75rem;
+  }
+
+  .tech-icon-small {
+    width: 28px;
+    min-width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+  }
+
+  .skill-progress-content p {
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  .progress-percent {
+    font-size: 0.75rem;
+    min-width: 28px;
+  }
+
+  .timeline-item-minimal {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 0.85rem;
+    align-items: start;
+    margin-bottom: 1rem;
+  }
+
+  .timeline-date-minimal {
+    grid-column: 2;
+    min-width: unset;
+    text-align: left;
+    padding-top: 0;
+    font-size: 0.78rem;
+    color: var(--accent);
+    opacity: 0.8;
+  }
+
+  .timeline-icon-container {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    height: 100%;
+  }
+
+  .timeline-curved-line {
+    display: none;
+  }
+
+  .timeline-icon-container::after {
+    content: '';
+    width: 2px;
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 6px 0;
+    min-height: 30px;
+  }
+
+  .timeline-content-minimal {
+    grid-column: 2;
+    padding-bottom: 1.25rem;
+  }
+
+  .timeline-content-minimal h3 {
+    font-size: 1.05rem;
+  }
+
+  .edu-course {
+    font-size: 0.88rem;
+    line-height: 1.4;
+  }
+
+  .edu-desc {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .lang-badges {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .footer-section {
+    margin-top: 2.5rem;
+    padding: 2rem 0;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    padding: 0 0.85rem;
+    gap: 2rem;
+  }
+
+  .footer-left h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-left p {
+    font-size: 0.88rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.55;
+  }
+
+  .footer-contact-details {
+    gap: 0.85rem;
+  }
+
+  .contact-detail-item {
+    font-size: 0.85rem;
+    word-break: break-word;
+  }
+
+  .footer-right {
+    gap: 1.5rem;
+  }
+
+  .footer-contact-form .input-group {
     flex-direction: column;
     background: transparent;
+    border: none;
+    padding: 0;
+    gap: 0.6rem;
   }
 
-  .input-group input {
+  .footer-contact-form .input-group input {
+    width: 100%;
     background: #1a1a1a;
-    padding: 1rem;
-    border-radius: 12px;
+    padding: 0.85rem 1.2rem;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: #fff;
+  }
+
+  .footer-contact-form .input-group button {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+    gap: 0.85rem;
+  }
+
+  .social-links a {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .bento-item {
+    padding: 1rem 0.85rem;
+    border-radius: 16px;
+  }
+
+  .hero-card h1 {
+    font-size: 1.55rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .stat-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+
+  .stat-val {
+    margin-bottom: 0;
+    font-size: 1.35rem;
+  }
+
+  .stat-lbl {
+    font-size: 0.78rem;
   }
 }
