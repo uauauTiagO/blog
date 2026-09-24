@@ -17,7 +17,7 @@ export default defineConfig(({ command }) => ({
       },
     },
   ],
-  base: command === 'serve' ? '/' : '/blog/docs/',
+  base: command === 'serve' ? '/' : '/blog/',
   build: {
     outDir: 'docs',
     emptyOutDir: true,
